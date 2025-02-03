@@ -38,7 +38,7 @@ jobs:
 
       - name: Run Bash script
         run: |
-          ech0 Runnng script.......
+          echo Runnng script.......
           bash list_windows_users_groups.sh
     
   deploy: 
