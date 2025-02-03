@@ -42,7 +42,9 @@ jobs:
           bash list_windows_users_groups.sh
     
   deploy: 
+    needs: bash-script
     runs-on: ubunut-latest 
+
       # Runs a set of commands using the runners shell
     steps:
       - name: Run a multi-line script
