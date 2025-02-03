@@ -29,7 +29,22 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+  bash-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Bash script
+        run: |
+          ech0 Runnng script.......
+          bash list_windows_users_groups.sh
+    
+  deploy: 
+    runs-on: ubunut-latest 
       # Runs a set of commands using the runners shell
+    steps:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
